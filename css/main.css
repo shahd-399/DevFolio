@@ -1,0 +1,303 @@
+h1, h2, h3, h4, h5, h6 {
+    color: #1e1e1e;
+}
+h2{
+    font-family: var(--bs-body-font-family);
+    font-weight: 500;
+    font-size: 22px;
+}
+body{
+    background-color: #F5F5F5;
+    scroll-behavior: smooth;
+}
+/**************navbar*************/
+.navbar{
+    background-color:rgba(0, 0, 0, 0.9) !important;
+}
+.dropdown .dropdown-menu{
+    display: none;
+}
+.dropdown:hover > .dropdown-menu,.dropend:hover > .dropdown-menu{
+    display: block;
+   
+}
+.dropend:hover > .dropdown-menu{
+    position: absolute;
+    top: 0;
+    left: 100%;
+}
+.nav-link{
+    color: white;
+}
+.nav-link:focus, .nav-link:hover {
+    color: white;
+}
+.dropdown-item:hover{
+    background-color: transparent;
+}
+.dropdown-menu a:hover{
+    color: #007aff !important;
+}
+
+li .line.w-line{
+    transform: translate(10px);
+    background-color:  white;
+    transition: width 0.5s;
+    width: 0%;
+}
+li:hover .line.w-line{
+    width: 60% !important; 
+}
+/***********HOME************/
+#HOME{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url("../images/hero-bg.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    padding: 120px 0px;
+    color: white;
+}
+#HOME h1{
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 4.5rem;
+    font-weight: 600;
+    line-height: 86.4px;
+    color: white;
+}
+#HOME p::before{
+    content: '';
+    animation: typing 10s infinite;
+}
+
+@keyframes typing{
+    0%{content: 'Designer'}
+    1%{content: 'Designe'}
+    2%{content: 'Design'}
+    4%{content: 'Desig'}
+    6%{content: 'Desi'}
+    7%{content: 'Des'}
+    8%{content: 'De'}
+    10%{content: 'Dev'}
+    12%{content: 'Deve'}
+    14%{content: 'Devel'}
+    16%{content: 'Develo'}
+    18%{content: 'Develop'}
+    20%{content: 'Develope'}
+    22%{content: 'Developer'}
+    23%{content: 'Develope'}
+    24%{content: 'Develop'}
+    25%{content: 'Develo'}
+    26%{content: 'Devel'}
+    27%{content: 'Deve'}
+    28%{content: 'Dev'}
+    29%{content: 'De'}
+    30%{content: 'D'}
+    31%{content: ''}
+    33%{content: 'f'}
+    35%{content: 'fr'}
+    37%{content: 'fre'}
+    39%{content: 'free'}
+    41%{content: 'freel'}
+    43%{content: 'freela'}
+    45%{content: 'freelan'}
+    47%{content: 'freelanc'}
+    49%{content: 'freelance'}
+    51%{content: 'freelancer'}
+    52%{content: 'freelance'}
+    53%{content: 'freelanc'}
+    54%{content: 'freelan'}
+    55%{content: 'freela'}
+    56%{content: 'freel'}
+    57%{content: 'free'}
+    58%{content: 'fre'}
+    59%{content: 'fr'}
+    60%{content: 'f'}
+    61%{content: ''}
+    63%{content: 'p'}
+    65%{content: 'ph'}
+    67%{content: 'pho'}
+    69%{content: 'phot'}
+    71%{content: 'photo'}
+    73%{content: 'photog'}
+    75%{content: 'photogr'}
+    77%{content: 'photogra'}
+    79%{content: 'photograp'}
+    80%{content: 'photograph'}
+    81%{content: 'photographe'}
+    82%{content: 'photographer'}
+    83%{content: 'photographe'}
+    84%{content: 'photograph'}
+    85%{content: 'photograp'}
+    86%{content: 'photogra'}
+    87%{content: 'photogr'}
+    88%{content: 'photog'}
+    89%{content: 'photo'}
+    90%{content: 'phot'}
+    91%{content: 'pho'}
+    92%{content: 'ph'}
+    93%{content: 'p'}   
+    94%{content: 'D'}
+    95%{content: 'De'}
+    69%{content: 'Des'}
+    79%{content: 'Desi'}
+    89%{content: 'Desig'}
+    99%{content: 'Design'}
+    100%{content: 'Designe'}
+}
+
+
+/**************ABOUT**************/
+.progress{
+    border-radius: 0px;
+    height: 0.7rem;
+    background-color: #cde1f8;
+}
+#ABOUT .container{
+    background-color: white;
+    color: rgb(30, 30, 30);
+}
+#ABOUT span ,#SERVICES p{
+    color: rgb(78, 78, 78) !important;
+}
+
+/***************SERVICES*************/
+.item i{
+    width: 120px;
+    height: 120px;
+    font-size: 2.5rem;
+    border: 10px #007aff solid;
+    border-radius: 50%;
+    transition: background-color 0.5s, color 0.5s ,border-color 0.5s;
+}
+.item{
+    background-color: white;
+}
+
+.item:hover i{ 
+    border-color: #cfe2ff;
+    background-color: #007aff;
+    color: white;
+}
+.line{
+    background-color: rgb(0, 120, 255);
+}
+/***********counter************/
+.icon i{
+    width: 80px;
+    height: 80px;
+    font-size: 1.5rem;
+    border: 10px #cfe2ff solid;
+    border-radius: 50%;    
+}
+.counter{
+    background-image: linear-gradient(rgba(0, 120, 255,0.7),rgba(0, 120, 255,0.7)),url("../images/counters-bg.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    padding: 120px 0px;
+    color: white;
+}
+.counter h3, .testimonial h3{
+    color: white;
+}
+/*************PORTFOLIO*************/
+#PORTFOLIO i{
+    color: #007aff;
+    width: 40px;
+    height: 40px;
+    font-size: 1.7rem;
+    font-weight: 400;
+    border: 3px #007aff solid;
+    border-radius: 50%;
+}
+.breadcrumb{
+    font-size: 0.8rem;
+}
+.picture img{
+    transition: transform 1s;
+}
+.picture:hover img{
+    transform: scale(1.3);
+}
+.card-body{
+    padding: 2rem 3% 1rem 4% !important;
+}
+/***********carousel**********/
+
+.testimonial-div{
+    background-image: linear-gradient(rgba(0, 120, 255,0.7),rgba(0, 120, 255,0.7)),url("../images/overlay-bg.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    color: white;
+}
+.carousel-indicators{
+   bottom: 100;
+}
+.carousel-indicators [data-bs-target] {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+/************BLOG*********/
+#BLOG .card-body{
+    padding-top: 0px !important;
+    padding-bottom: 30px !important;
+}
+.card-footer img{
+    width: 30px;
+    height: 30px;
+}
+.card-footer a{
+    transition: color 0.5s;
+}
+.card-footer:hover a{
+    color: #007aff !important;
+}
+/**********cotact-us***********/
+.contact-us .container{
+    background-color: white;
+}
+
+.button:hover {
+    background: #3393ff;
+    box-shadow: 0 0 0 4px #cde1f8;
+    
+}
+.btn:hover {
+    background: #3393ff;
+    box-shadow: 0 0 0 4px #cde1f8;
+}
+.ic i{
+    color: #007aff;
+}
+.icons-4 i{
+    width: 50px;
+    height: 50px;
+    font-size: 1.2rem;
+    border: 3px #007aff solid;
+    border-radius: 50%;
+    transition: background-color 0.5s, color 0.5s ,border-color 0.5s;
+}
+
+.icons-4 i:hover{ 
+    border-color: #cfe2ff;
+    background-color: #007aff;
+    color: white;
+}
+
+.contact-us{
+    background-image: linear-gradient(rgba(0, 120, 255,0.6),rgba(0, 120, 255,0.6)),url("../images/overlay-bg.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+}
+/********************************/
+footer{
+    background-color: #0062d3;
+    color: white;
+}
